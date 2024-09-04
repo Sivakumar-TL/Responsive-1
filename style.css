@@ -1,0 +1,66 @@
+header{
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+    padding: 20px;
+    line-height: 3.5;
+}
+
+aside{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sidenav-btn{
+    display: none;
+}
+
+main{
+    width: 77%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+main article{
+    padding: 10px;
+    background-color: rgb(176, 219, 219);
+    margin-bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 25px;
+}
+#sidenav{
+    display: none;
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+@media (min-width:375px) and (max-width:768px){
+    aside{
+        width: 100%;
+        display: block;
+    }
+
+    main{
+        width: 100%;
+        display: block;
+    }
+
+    #navone{
+        display: none;
+    }
+    #sidenav-btn{
+        display: block;
+    }
+}
